@@ -1,5 +1,13 @@
+
 function showAlertSuccess() {
     document.getElementById("alert-success").classList.add("show");
+
+    const alertSuccess = document.getElementById("alert-success");
+    alertSuccess.classList.add("show");
+    setTimeout(function() {
+        alertSuccess.classList.remove("show");
+    },3000);
+
     // Restablecer los valores de los campos del formulario
     document.getElementById("nombre").value = "";
     document.getElementById("apellido").value = "";
@@ -11,6 +19,11 @@ function showAlertSuccess() {
 
 function showAlertError() {
     document.getElementById("alert-danger").classList.add("show");
+    const alertError = document.getElementById("alert-danger");
+    alertError.classList.add("show");
+    setTimeout(function() {
+        alertError.classList.remove("show");
+    }, 3000);
 }
 
 const registroBtn = document.getElementById("regBtn");
