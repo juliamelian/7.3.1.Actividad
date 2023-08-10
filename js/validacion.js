@@ -31,10 +31,11 @@ function validarRegistro() {
         return;
     }
 
-    if (password1 !== password2) {
+    if (password1.length < 6 ||password1 !== password2) {
         showAlertError();
         return;
     }
+
 
     showAlertSuccess();
 }
