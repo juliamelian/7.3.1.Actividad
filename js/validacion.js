@@ -1,5 +1,12 @@
 function showAlertSuccess() {
     document.getElementById("alert-success").classList.add("show");
+    // Restablecer los valores de los campos del formulario
+    document.getElementById("nombre").value = "";
+    document.getElementById("apellido").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("password1").value = "";
+    document.getElementById("password2").value = "";
+    document.getElementById("terminos").checked = false;
 }
 
 function showAlertError() {
@@ -36,7 +43,7 @@ function validarRegistro() {
         return;
     }
 
-
     showAlertSuccess();
+
 }
 
